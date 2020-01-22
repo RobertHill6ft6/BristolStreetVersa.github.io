@@ -1,0 +1,255 @@
+*{
+   margin: 0px;
+   padding: 0px;
+}
+body /*by naming the body tag or any predefined tag in the style sheet, will allow for all the contents of the tag to be changed in this way no matter where it is used.*/
+{
+	font-family: 'Roboto', sans-serif; /*Defines the font of the body so this pre sets the text font for the whole of the content.*/
+	font-size: 1em; /*The this sets the font size of the content, the unit of 'em' is better than using 'px' as it will not change with browser window so it should be universal.*/
+	margin-right: 15%;
+	margin-left: 15%;
+	background-color: #e1e1e8;
+	overflow: scroll;
+	min-width: 1000px;
+}
+
+.grid-container
+{
+	display: grid;
+	background-color: white;
+}
+.table
+{
+	display: table;   /* Allow the centering to work */
+	margin: 0 auto;
+}
+.grid-item
+{
+	overflow:hidden;
+	font-size: 30px;
+	border: 0.5px solid black; /*Creates a border around the header div of the thickness set and it also sets the colour and style.*/
+	border-top: 0.0px;
+}
+.logo-item
+{
+	grid-column: 1;
+	grid-row: 1 / span 2;
+	
+}
+.settings-item
+{
+	grid-column: 2;
+	grid-row: 1;
+	font-size: 20px;
+}
+.nav1-item
+{
+	grid-column: 2;
+	grid-row: 2;
+	text-align: center;
+	font-size: 20px;
+}
+.nav2-item
+{
+	grid-column: 1 / span 2;
+	grid-row: 3;
+	font-size: 30px;
+	background-color: blue;
+}
+nav
+{
+	text-align: justify;
+}
+li
+{
+	float: left;
+}
+
+.navigation1 li a 
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation1 li a:hover:not(.active) 
+{
+  background-color: blue;
+}
+.active 
+{
+  background-color: #4CAF50;
+}
+.navigation1
+{
+	list-style-type: none; /*makes the list a standard list in style.*/
+	padding: 0;
+	overflow: hidden; /*this hides the bullet points as without this they are visible as they engross onto each other’s buttons.*/
+	background-color: white;
+}
+.navigation1 li
+{
+	display: inline;
+	margin: 5px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#content1
+{
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+.bannerImage
+{
+	max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+
+.bannerP
+{
+	position: absolute;
+	top: 15%;
+	left: 10%;
+	background-color: black;
+	color: white;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.navigation2 li a 
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation2 li a:hover:not(.active) 
+{
+  text-decoration: underline;
+}
+.active 
+{
+  background-color: #4CAF50;
+}
+.navigation2
+{
+	list-style-type: none; /*makes the list a standard list in style.*/
+	padding: 0;
+	overflow: hidden; /*this hides the bullet points as without this they are visible as they engross onto each other’s buttons.*/
+	background-color: blue;
+}
+.navigation2 li
+{
+	display: inline;
+	margin: 5px;
+	text-align: center;
+	overflow: hidden;
+	float: right;
+}
+
+.navigation3
+{
+	list-style-type: none; /*makes the list a standard list in style.*/
+	padding: 0;
+	overflow: hidden; /*this hides the bullet points as without this they are visible as they engross onto each other’s buttons.*/
+	background-color: white;
+	width: 100%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+.navigation3 ul
+{
+	display: inline-block;
+	list-style-type: none;
+	width: 100%;
+}
+.navigation3 li
+{
+	margin-top: 3%;
+	text-align: center;
+	overflow: hidden;
+	float: center;
+	width: 260px;
+}
+
+.navigation3 li a 
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border: 1px solid blue;
+}
+
+#content2
+{
+	overflow: hidden;
+	background-color: white;
+}
+#content2 button
+{
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	display: inline-block;
+	padding: 15px 32px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 4px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 40%;
+}
+.dimTable
+{
+	margin-top: 5%;
+	margin-left: 15%;
+	float: left;
+}
+.dimTable tr
+{
+	width: 300px;
+}
+.dimTable th
+{
+	text-align: center;
+	padding: 14px 16px;
+	width: 100px;
+}
+.dimTable td
+{
+	text-align: left;
+	padding: 14px 16px;
+	border: 1px solid black;
+	width: 100px;
+}
+.dimImg
+{
+	margin-top: 5%;
+}
+.layoutImg
+{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.layoutTxt
+{
+	margin-left: 5%;
+}
+#content3
+{
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+.carInteriorImage
+{
+	max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
