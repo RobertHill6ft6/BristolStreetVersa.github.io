@@ -1,3 +1,8 @@
+/*Style Sheet For Bristol Street Motors
+Creator: Robert Hill
+Date Edited: 24/01/2020
+*/
+
 *{
    margin: 0px;
    padding: 0px;
@@ -12,7 +17,7 @@ body /*by naming the body tag or any predefined tag in the style sheet, will all
 	overflow: scroll;
 	min-width: 1000px;
 }
-
+/*header bar style start*/
 .grid-container
 {
 	display: grid;
@@ -95,7 +100,43 @@ li
 	text-align: center;
 	overflow: hidden;
 }
+/*header bar style end*/
 
+/*Navigation Bar 2 style start*/
+.navigation2
+{
+	list-style-type: none; /*makes the list a standard list in style.*/
+	padding: 0;
+	overflow: hidden; /*this hides the bullet points as without this they are visible as they engross onto each other’s buttons.*/
+	background-color: blue;
+}
+.navigation2 li
+{
+	display: inline;
+	margin: 5px;
+	text-align: center;
+	overflow: hidden;
+	float: right;
+}
+.navigation2 li a 
+{
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation2 li a:hover:not(.active) 
+{
+  text-decoration: underline;
+}
+.active 
+{
+  background-color: #4CAF50;
+}
+/*Navigation Bar 2 style end*/
+
+/* Start of Section 1 the section that contains the banner.*/
 #content1
 {
 	position: relative;
@@ -119,38 +160,9 @@ li
 	padding-left: 20px;
 	padding-right: 20px;
 }
-.navigation2 li a 
-{
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-.navigation2 li a:hover:not(.active) 
-{
-  text-decoration: underline;
-}
-.active 
-{
-  background-color: #4CAF50;
-}
-.navigation2
-{
-	list-style-type: none; /*makes the list a standard list in style.*/
-	padding: 0;
-	overflow: hidden; /*this hides the bullet points as without this they are visible as they engross onto each other’s buttons.*/
-	background-color: blue;
-}
-.navigation2 li
-{
-	display: inline;
-	margin: 5px;
-	text-align: center;
-	overflow: hidden;
-	float: right;
-}
+/* End of Section 1 the section that contains the banner.*/
 
+/*Navigation Bar 3 style start*/
 .navigation3
 {
 	list-style-type: none; /*makes the list a standard list in style.*/
@@ -185,13 +197,15 @@ li
   text-decoration: none;
   border: 1px solid blue;
 }
+/*Navigation Bar 3 style end*/
 
+/* Start of Section 2 the section that hosts colour, interior dimensions etc.*/
 #content2
 {
 	overflow: hidden;
 	background-color: white;
 }
-#content2 button
+.offerButton
 {
 	background-color: #4CAF50; /* Green */
 	border: none;
@@ -201,6 +215,20 @@ li
 	text-align: center;
 	font-size: 16px;
 	border-radius: 4px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 40%;
+}
+.colourButton
+{
+	border: 3px solid white;
+	box-shadow: 2px 2px #888888;
+	color: white;
+	display: inline-block;
+	padding: 20px 20px;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 60%;
 	margin-top: 5%;
 	margin-bottom: 5%;
 	margin-left: 40%;
@@ -241,6 +269,42 @@ li
 {
 	margin-left: 5%;
 }
+.colourImg
+{
+	margin-top: 5%;
+	margin-left: 18%;
+	margin-right: 15%;
+	height: 500px;
+	width: 850px;
+}
+.colourTable
+{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.colourTable td
+{
+	padding: 14px 16px;
+}
+.trimTable
+{
+	margin-top: 5%;
+	margin-left: 10%;
+	float: left;
+}
+.trimTable td
+{
+	float: left;
+	padding: 4px 5px;
+}
+.interiorTrimImg
+{
+	width: 1080px;
+	height: 600px;
+}
+/* End of Section 2*/
+
+/* Start of Section 3 the car interior image banner.*/
 #content3
 {
 	position: relative;
@@ -253,3 +317,54 @@ li
     max-height: 100%;
     display: block; /* remove extra space below image */
 }
+/* End of Content Section 3*./
+
+/* Start of Content Section 4 the paragraph of text*/
+#content 4
+{
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+.paraContent4
+{
+	margin: 2.5% 10%;
+}
+/* End of Content Section 4 the paragraph of text*/
+
+/* Start of Content Section 5 which is the keeping you going banner.*/
+#content5
+{
+	position: relative;
+	overflow: hidden;
+	background-color: white;
+}
+.keepYouGoingImg
+{
+	max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+}
+.keepGoingP
+{
+	position: absolute;
+	top: 25%;
+	left: 10%;
+	background-color: white;
+	font-size: 18px;
+	opacity: 0.6;
+	padding: 20px 20px;
+}
+.keepGoingBtn
+{
+	background-color: blue;
+	opacity: 1;
+	border-radius: 4px;
+	color: white;
+	display: inline-block;
+	padding: 15px 20px;
+	text-align: center;
+	font-size: 18px;
+	margin: 5% 22%;
+}
+/* End of Content Section 5 which is the keeping you going banner.*/
